@@ -7,5 +7,5 @@ export const printWelcome = (username) => {
 };
 
 export const printGoodbye = (username) => {
-  console.log(`\nThank you for using File Manager, ${username}, goodbye!`);
+  console.log(`Thank you for using File Manager, ${username}, goodbye!`);
 };

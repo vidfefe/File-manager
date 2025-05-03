@@ -9,11 +9,7 @@ export const up = (currentDir) => {
   return currentDir;
 };
 
-export const changeDirectory = (newDir, currentDir) => {
-  const newPath = path.isAbsolute(newDir)
-    ? newDir
-    : path.join(currentDir, newDir);
-
+export const changeDirectory = (newPath) => {
   if (fs.existsSync(newPath) && fs.lstatSync(newPath).isDirectory()) {
     return newPath;
   }
